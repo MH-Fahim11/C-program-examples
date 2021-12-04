@@ -2,13 +2,16 @@
 
 int main()
 {
-    int n=10;
+    int n=5;
 
-    if (n < 30){
-        printf("n is less than 30.\n");
+    while (n<10){
+        n++;
+
+        if (n%2==0){
+            continue;
+        }
+        printf("%d\n", n);
     }
-    if (n < 50){
-        printf("n is less then 50.\n");
-    }
+
     return 0;
 }
