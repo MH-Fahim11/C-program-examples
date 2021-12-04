@@ -2,15 +2,19 @@
 
 int main()
 {
-    int n=5;
-
-    while (n<10){
-        n++;
-
-        if (n%2==0){
-            continue;
+    int n, m, j, i;
+    scanf("%d", &n);
+    for(i = 0; i < n; i++ )
+    {
+        scanf("%d",&m);
+        for(j = 10; j<=m; j++)
+        {
+            if (j % 11==0)
+            {
+                continue;
+            }
+            printf("%d\n", j);
         }
-        printf("%d\n", n);
     }
 
     return 0;
